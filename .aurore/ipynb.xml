@@ -1,0 +1,11 @@
+
+<map id="{{ id }}" base="{{ id }}" >
+    <str key="title" src="src/main.ipynb#/metadata/meta/title" />
+    <str key="description" src="src/main.ipynb#/metadata/meta/description" />
+    <str key="prog-lang" src="src/main.ipynb#/metadata/kernelspec/language" />
+    <set key="doc">
+        <path>./README.md</path>
+        <path>./*.png</path>
+        <path>./img/*</path>
+    </set>
+</map>

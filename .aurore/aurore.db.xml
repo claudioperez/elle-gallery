@@ -1,0 +1,110 @@
+<collection>
+  <items id="stdy">
+    
+    <map id="stdy-0002" base="stdy-0002" >
+      <str key="title" src="P4-TC-Widget.ipynb#/metadata/meta/title" />
+      <!-- <str key="description" src="src/main.ipynb#/metadata/meta/description" /> -->
+      <str key="prog-lang" src="P4-TC-Widget.ipynb#/metadata/kernelspec/language" />
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.svg</path>
+      </set>
+    </map>
+    
+    <map id="stdy-0003" type="ipynb" created="2020-08-01"/>
+    
+    <map id="stdy-0007" src="./stdy-0007/meta.xml#/" />
+
+    <map id="stdy-0009" type="stdy" created="" /> 
+    <!-- <map id="stdy-0009" base="stdy-0009" >
+      <str id="title" src="meta.yaml#/title"/>
+      <str id="description" src="meta.yaml#/abstract"/>
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.svg</path>
+      </set>
+    </map> -->
+    <map id="stdy-0010" type="ipynb" created="" />
+    
+    <map id="stdy-0013" base="stdy-0013" >
+      <str key="title" src="meta.yaml#/title" />
+      <str key="description" src="meta.yaml#/description" />
+      <str key="prog-lang" src="meta.yaml#/prog-lang" />
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.svg</path>
+      </set>
+    </map>
+    
+    <map id="stdy-0014" base="stdy-0014" >
+      <str key="title" src="study.yaml#/title" />
+      <str key="description" src="study.yaml#/description" />
+      <str key="prog-lang" src="study.yaml#/prog-lang" />
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.png</path>
+      </set>
+    </map>
+    
+    <map id="stdy-0015" type="stdy" />
+
+
+    <map id="elle-0001" base="elle-0001" >
+      <str key="title" src="meta.yaml#/title" />
+      <!-- <str key="description" src="meta.yaml#/description" /> -->
+      <str key="prog-lang" src="meta.yaml#/prog-lang" />
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.png</path>
+          <path>./img/*</path>
+      </set>
+    </map>
+
+    <map id="elle-0002" base="elle-0002" >
+      <str key="title" src="meta.yaml#/title" />
+      <!-- <str key="description" src="meta.yaml#/description" /> -->
+      <str key="prog-lang" src="meta.yaml#/prog-lang" />
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.svg</path>
+          <path>./img/*</path>
+      </set>
+    </map>
+
+    <map id="elle-0003" base="elle-0003" >
+      <str key="title" src="meta.yaml#/title" />
+      <!-- <str key="description" src="meta.yaml#/description" /> -->
+      <str key="prog-lang" src="meta.yaml#/prog-lang" />
+      <set key="doc">
+          <path>./README.md</path>
+          <path>./*.png</path>
+          <path>./img/*</path>
+      </set>
+    </map>
+
+    <map id="elle-0004" type="ipynb" created="" />
+
+    <map id="elle-0005" type="ipynb" created="" />
+    
+    <map id="elle-0007" type="ipynb" created="2021-01-15" />
+
+    <map id="elle-0008" type="ipynb" created="2021-01-15" />
+    
+    <map id="elle-0009" base="elle-0009" >
+        <str key="title" src="src/main.ipynb#/metadata/meta/title" />
+        <str key="description" src="src/main.ipynb#/metadata/meta/description" />
+        <str key="prog-lang" src="src/main.ipynb#/metadata/kernelspec/language" />
+        <set key="doc">
+            <path>./README.md</path>
+            <path>./*.png</path>
+            <path>./img/*</path>
+            <path>./out/*.html</path>
+        </set>
+    </map>
+
+
+
+
+  </items>
+
+</collection>

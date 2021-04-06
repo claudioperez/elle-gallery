@@ -1,0 +1,9 @@
+<map id="{{ id }}" base="{{ id }}" >
+    <str key="title"       src="meta.yaml#/title"/>
+    <str key="description" src="meta.yaml#/description"/>
+    <str key="prog-lang"   src="meta.yaml#/prog-lang"/>
+    <set key="doc">
+        <path>./README.md</path>
+        <path>./*.png</path>
+    </set>
+</map>

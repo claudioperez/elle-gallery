@@ -1,0 +1,171 @@
+{
+  "items": {
+    "stdy-0002": {
+      "id": "stdy-0002",
+      "title": "Interactive fiber limit surface",
+      "prog-lang": "python",
+      "doc": [
+        "stdy-0002/./*.svg",
+        "stdy-0002/./README.md"
+      ]
+    },
+    "stdy-0003": {
+      "id": "stdy-0003",
+      "title": "Pre-stress moment influence",
+      "description": "A study of the influence of brace pre-stressing on moment distribution.",
+      "prog-lang": "python",
+      "doc": [
+        "stdy-0003/./*.png",
+        "stdy-0003/./README.md",
+        "stdy-0003/./img/*"
+      ]
+    },
+    "stdy-0007": {
+      "id": "stdy-0007",
+      "title": "Concentrated Hinge Offsets",
+      "prog-lang": "javascript",
+      "doc": [
+        "stdy-0007/./README.md",
+        "stdy-0007/./src/app.js",
+        "stdy-0007/./src/main.html"
+      ]
+    },
+    "stdy-0009": {
+      "id": "stdy-0009",
+      "title": "Panel Zone Mesh Generation",
+      "description": "Algorithmic panel zone mesh generation for skeletal finite element models.",
+      "prog-lang": "Matlab",
+      "doc": [
+        "stdy-0009/./README.md",
+        "stdy-0009/./*.png"
+      ]
+    },
+    "stdy-0010": {
+      "id": "stdy-0010",
+      "title": "Modeling data structures",
+      "description": "A study of various data structures for modeling finite element models.",
+      "prog-lang": "python",
+      "doc": [
+        "stdy-0010/./README.md",
+        "stdy-0010/./img/*",
+        "stdy-0010/./*.png"
+      ]
+    },
+    "stdy-0013": {
+      "id": "stdy-0013",
+      "title": "Function pointers",
+      "description": "A study of function pointers in C",
+      "prog-lang": "C",
+      "doc": [
+        "stdy-0013/./README.md",
+        "stdy-0013/./*.svg"
+      ]
+    },
+    "stdy-0014": {
+      "id": "stdy-0014",
+      "title": "JAX library studies",
+      "description": "A collection of studies and tests using the JAX Python library.",
+      "prog-lang": "python",
+      "doc": [
+        "stdy-0014/./*.png",
+        "stdy-0014/./README.md"
+      ]
+    },
+    "stdy-0015": {
+      "id": "stdy-0015",
+      "title": "Inelastic Simply Supported Beam",
+      "description": "Study of an inelastic beam under imposed displacements.",
+      "prog-lang": "matlab",
+      "doc": [
+        "stdy-0015/./README.md",
+        "stdy-0015/./*.png"
+      ]
+    },
+    "elle-0001": {
+      "id": "elle-0001",
+      "title": "Neural-truss",
+      "prog-lang": "Python",
+      "doc": [
+        "elle-0001/./README.md",
+        "elle-0001/./*.png",
+        "elle-0001/./img/*"
+      ]
+    },
+    "elle-0002": {
+      "id": "elle-0002",
+      "title": "Stochastic Built-up Column (CalRel)",
+      "prog-lang": "Python",
+      "doc": [
+        "elle-0002/./README.md",
+        "elle-0002/./*.svg",
+        "elle-0002/./img/*"
+      ]
+    },
+    "elle-0003": {
+      "id": "elle-0003",
+      "title": "T-Section",
+      "prog-lang": "Python",
+      "doc": [
+        "elle-0003/./README.md",
+        "elle-0003/./img/*",
+        "elle-0003/./*.png"
+      ]
+    },
+    "elle-0004": {
+      "id": "elle-0004",
+      "title": "Series Inelastic Cantilever",
+      "description": "Cyclic loading of an inelastic cantilever column using a one component series beam model.",
+      "prog-lang": "python",
+      "doc": [
+        "elle-0004/./README.md",
+        "elle-0004/./*.png",
+        "elle-0004/./img/*"
+      ]
+    },
+    "elle-0005": {
+      "id": "elle-0005",
+      "title": "Differentiable Fiber Section",
+      "description": "Inelastic cycling of a rectangular fiber section.",
+      "prog-lang": "python",
+      "doc": [
+        "elle-0005/./img/*",
+        "elle-0005/./*.png",
+        "elle-0005/./README.md"
+      ]
+    },
+    "elle-0007": {
+      "id": "elle-0007",
+      "title": "Series Inelastic Cantilever",
+      "description": "Cyclic loading of an inelastic cantilever column using a one component series beam model.",
+      "prog-lang": "python",
+      "doc": [
+        "elle-0007/./*.png",
+        "elle-0007/./README.md",
+        "elle-0007/./img/*"
+      ]
+    },
+    "elle-0008": {
+      "id": "elle-0008",
+      "title": "Newmark Integration: Linear CAAM",
+      "description": "Time integration of a linear single DOF system using Newmarks method.",
+      "prog-lang": "python",
+      "doc": [
+        "elle-0008/./README.md",
+        "elle-0008/./*.png",
+        "elle-0008/./img/*"
+      ]
+    },
+    "elle-0009": {
+      "id": "elle-0009",
+      "title": "Nonlinear 1D Plasticity",
+      "description": "One-dimensional material model with nonlinear kinematic and isotropic hardening.",
+      "prog-lang": "python",
+      "doc": [
+        "elle-0009/./img/*",
+        "elle-0009/./*.png",
+        "elle-0009/./README.md",
+        "elle-0009/./out/*.html"
+      ]
+    }
+  }
+}
