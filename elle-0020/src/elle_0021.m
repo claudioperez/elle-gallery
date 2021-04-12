@@ -1,8 +1,20 @@
-function resp = elle_0021(Ph, I)
-% Set up nodes
+%function resp = elle_0021(Ph, ColumnE, GirderE)
+clear all;
+Ph = 10e3;
+Pv = -2e3;
+ColumnE = 29e6 ;
+GirderE = 29e6;
 ft = 12.0;
-B = 20.*ft;
-H = 10.*ft;
+
+BeamArea = 38.3;
+BeamMOI = 6710.0;
+ColumnArea = 46.7;
+ColumnMOI = 1900.0;
+%%
+
+% Set up nodes
+B = 30.*ft; % Base
+H = 13.*ft; % Height
 XYZ(1,:) = [  0.,  0.];
 XYZ(2,:) = [  0.,  H ];
 XYZ(3,:) = [ B/2,  H ];
@@ -27,11 +39,17 @@ end
 Model = Create_Model(XYZ,CON,BOUN,ElemName);
 
 % specify geometry option
-Geom = 'linear';
-for el = [1:nel]
-  ElemData{el}.E = 29e3;
-  ElemData{el}.A = 125.0;
-  ElemData{el}.I = I;
+Geom = 'corotational';
+for el = [1,4]
+  ElemData{el}.E = ColumnE;
+  ElemData{el}.A = ColumnArea;
+  ElemData{el}.I = ColumnMOI;
+  ElemData{el}.Geom = Geom;  % linear, PDelta, or corotational
+end
+for el = [2,3]
+  ElemData{el}.E = GirderE;
+  ElemData{el}.A = BeamArea;
+  ElemData{el}.I = BeamMOI;
   ElemData{el}.Geom = Geom;  % linear, PDelta, or corotational
 end
 
@@ -39,16 +57,17 @@ ElemData = Structure ('chec',Model,ElemData);
 
 %% 2. Cyclic axial force and horizontal displacement
 % specify nodal forces and displacements
-clear Pe
+
 Pe(2,1) = Ph;
+Pe(2,2) = Pv;
+Pe(4,2) = Pv;
 Loading = Create_Loading(Model,Pe,[]);
 
 % initial solution strategy parameters
 SolStrat = Initialize_SolStrat;
 %State = Initialize_State(Model,ElemData);
 State = Initialize_State(Model,ElemData);
-%[State,SolStrat] = Initialize (Model,ElemData,Loading,State,SolStrat);
-
+[State,SolStrat] = Initialize(Model,ElemData,Loading,State,SolStrat);
+[State,SolStrat] = Increment(Model,ElemData,Loading,State,SolStrat);
 [State,SolStrat] = Iterate(Model,ElemData,Loading,State,SolStrat);
-resp = [];
-
+resp = State.U
