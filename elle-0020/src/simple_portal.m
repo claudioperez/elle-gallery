@@ -8,7 +8,7 @@ ft = 12.0;
 B = 30.*ft; % Base
 H = 13.*ft; % Height
 
-Ph = 20e3;
+Ph = 2e3;
 Pv = -2e3;
 ColumnE = ConcMod;
 GirderE = ConcMod;
