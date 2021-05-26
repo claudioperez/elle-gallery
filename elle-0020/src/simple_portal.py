@@ -10,19 +10,18 @@ model = em.SkeletalModel(ndm=2,ndf=3)
 
 # Define problem parameters
 tf, bf = model.param("tf","bf")
-bw, tw = 18, 18
-A  = model.expr(lambda tf, bf: bf*tf + bw*tw, tf, bf)
+dw, tw = 18, 18
+A  = model.expr(lambda tf, bf: bf*tf + dw*tw, tf, bf)
 
 def moi(tf, bf):
-    area = bf*tf + bw *tw
-    y_c = 1/(2*area) * (tw*(bw+tf)**2 + (bf-tw)*tf**2)
-    return bf*tf**3/12.0 + (bf*tf)*(tf*0.5*y_c)**2 + \
-           tw*bw**3/12 + tw*bw*((bw+2*tf)*0.5-y_c)**2
+    area = bf*tf + dw *tw
+    y_c = 1/(2*area) * (tw*(dw+tf)**2 + (bf-tw)*tf**2)
+    return tw*(dw+tf)**3/3 + (bf - tw)*tf**3/3 - area*y_c**2
 
 I  = model.expr(moi, tf, bf)
 
 # Define model components
-column_section = {"A": 30**2, "E": 3600.0, "I": 30**4}
+column_section = {"A": 30**2, "E": 3600.0, "I": 30**4/12}
 girder_section = {"A": A, "E": 3600.0, "I": I}
 basic_girder  = beam_template(**girder_section)
 basic_column  = beam_template(**column_section)
@@ -51,4 +50,4 @@ model.load("2", 1000.0, dof="x")
 model.load("2",   -2.0, dof="y")
 model.load("4",   -2.0, dof="y")
 
-f = model.compose()
+f = model.compose(_jit_force=True)
