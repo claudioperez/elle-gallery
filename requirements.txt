@@ -1,6 +1,13 @@
 anabel
+aleatoire
 elle.beam2d
 anon
 jax
 jaxlib
+
+numpy
+
+matplotlib
+ipywidgets
+ipympl
 
