@@ -1,6 +1,8 @@
-anabel
+anabel==0.0.10
 aleatoire
 elle.beam2d
+elle.numeric
+elle.sections
 anon
 jax==0.2.12
 jaxlib==0.1.64
