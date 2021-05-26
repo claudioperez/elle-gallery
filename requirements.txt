@@ -1,4 +1,4 @@
-anabel==0.0.10
+anabel==0.0.11
 aleatoire
 elle.beam2d
 elle.numeric
