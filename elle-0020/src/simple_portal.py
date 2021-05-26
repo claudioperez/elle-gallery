@@ -1,7 +1,6 @@
 import anabel.backend as anp
 import anabel as em
 
-import elle.sections
 import elle.beam2d
 geom_template = elle.beam2d.transform_no2(elle.beam2d.geom_no1)
 beam_template = elle.beam2d.resp_no1

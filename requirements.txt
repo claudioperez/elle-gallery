@@ -2,9 +2,10 @@ anabel
 aleatoire
 elle.beam2d
 anon
-jax
-jaxlib
+jax==0.2.12
+jaxlib==0.1.64
 
+pandas
 numpy
 
 matplotlib
